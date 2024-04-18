@@ -10,6 +10,9 @@ WIN_DIR="//10.0.0.236/Videos2"
 yum install podman -y
 systemctl enable --now podman
 
+yum install docker -y
+systemctl enable --now docker
+
 #Install docker-compose
 curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod 755 /usr/local/bin/docker-compose
