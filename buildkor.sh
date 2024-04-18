@@ -15,6 +15,7 @@ curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compos
 chmod 755 /usr/local/bin/docker-compose
 
 #Mount your Windows drive to Linux
+yum install cifs-utils -y
 sudo mount -t cifs $WIN_DIR $VID_DIR -o username=$WIN_USER,password=$WIN_PW
 
 #Build korcese environment
