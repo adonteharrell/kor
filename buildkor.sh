@@ -31,4 +31,5 @@ setenforce 0
 docker-compose up -d 
 
 #Start container and move movies
+docker exec -it korcese sh convert.sh
 podman exec -it korcese sh convert.sh 
