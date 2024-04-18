@@ -17,7 +17,10 @@ systemctl enable --now docker
 curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod 755 /usr/local/bin/docker-compose
 
-#Mount your Windows drive to Linux
+#Create your local video directory 
+mkdir $VID_DIR
+
+#Mount your Windows drive to local video directory
 yum install cifs-utils -y
 sudo mount -t cifs $WIN_DIR $VID_DIR -o username=$WIN_USER,password=$WIN_PW
 
