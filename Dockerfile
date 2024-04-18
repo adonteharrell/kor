@@ -13,7 +13,7 @@ RUN mkdir /videos
 COPY httpd.conf /etc/httpd/conf/httpd.conf
 COPY welcome.conf /etc/httpd/conf.d/welcome.conf
 #Copy scripts 
-COPY ./scripts/* /korcese 
+COPY ./scripts/* /korcese/
 
 #CD into korcese dir
 WORKDIR /korcese
