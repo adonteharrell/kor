@@ -24,7 +24,11 @@ mkdir $VID_DIR
 yum install cifs-utils -y
 sudo mount -t cifs $WIN_DIR $VID_DIR -o username=$WIN_USER,password=$WIN_PW
 
+# Set SELinux to permissive if needed 
+setenforce 0
+
 #Build korcese environment
 docker-compose up -d 
+
 #Start container and move movies
 podman exec -it korcese sh convert.sh 
