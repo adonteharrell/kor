@@ -2,8 +2,8 @@
 
 #Set enviroment variables
 VID_DIR="/videos"
-WIN_USER="Kizle"
-WIN_PW="james460"
+WIN_USER="Dummy"
+WIN_PW="youdumb"
 WIN_DIR=$(\\10.0.0.236\Videos2)
 
 #Install podman and enable service.
